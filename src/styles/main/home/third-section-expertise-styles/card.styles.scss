@@ -1,0 +1,118 @@
+.section_three_card {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.13);
+  height: 250px;
+  width: calc(33% - 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-bottom: 80px;
+  position: relative;
+  transition: 0.5s;
+}
+.section_three_card:hover {
+  transform: scale(1.05) !important;
+  cursor: pointer;
+}
+.section_three_card:hover .section_three_card_border_bottom {
+  animation: 0.5s linear fadein forwards;
+}
+@keyframes fadein {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+.section_three_icon_container {
+  width: 100px;
+  height: 110px;
+  z-index: 9;
+  position: absolute;
+  top: -20%;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  transition: 0.5s;
+}
+.section_three_card:nth-child(1) .section_three_icon_container,
+.section_three_card:nth-child(1) .section_three_card_border_bottom {
+  background-color: var(--blue);
+}
+.section_three_card:nth-child(2) .section_three_icon_container,
+.section_three_card:nth-child(2) .section_three_card_border_bottom {
+  background-color: var(--red);
+}
+.section_three_card:nth-child(3) .section_three_icon_container,
+.section_three_card:nth-child(3) .section_three_card_border_bottom {
+  background-color: var(--yellow);
+}
+.section_three_card:nth-child(4) .section_three_icon_container,
+.section_three_card:nth-child(4) .section_three_card_border_bottom {
+  background-color: var(--purple);
+}
+.section_three_card:nth-child(5) .section_three_icon_container,
+.section_three_card:nth-child(5) .section_three_card_border_bottom {
+  background-color: var(--teal);
+}
+.section_three_card:nth-child(6) .section_three_icon_container,
+.section_three_card:nth-child(6) .section_three_card_border_bottom {
+  background-color: var(--indigo);
+}
+.section_three_icon {
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section_three_card:hover .section_three_icon_spin_animation {
+  animation: spin 1s linear forwards;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.section_three_card:hover .section_three_icon_extend_animation {
+  width: 40px;
+  height: 40px;
+}
+.section_three_card:hover .section_three_icon_remove_icon {
+  width: 40px;
+  height: 40px;
+  content: url("../../../../assets/icons/lightbulb-solid.svg");
+}
+.section_three_card_content_container {
+  text-align: center;
+  margin: 0 26px;
+}
+.section_three_card_title {
+  margin: 0;
+}
+.section_three_card_content {
+  color: #9b9b9b;
+  font-size: 14px;
+  text-align: center;
+}
+.section_three_card_border_bottom {
+  height: 5px;
+  width: 100%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .section_three_card {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .section_three_card {
+    width: 100%;
+  }
+}

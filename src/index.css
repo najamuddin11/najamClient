@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(./assets/fonts/Quicksand-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(./assets/fonts/Quicksand-Medium.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(./assets/fonts/Quicksand-Bold.ttf);
+  font-weight: bolder;
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(./assets/fonts/Quicksand-Light.ttf);
+  font-weight: lighter;
+}
+/* @font-face {
+  font-family: "Pacifico";
+  src: url("./assets/fonts/Pacifico-Regular.ttf");
+} */
+html {
+  scroll-behavior: smooth;
+}
+[id] {
+  scroll-margin-top: 90px;
+}
+body {
+  margin: 0;
+  font-family: "Quicksand";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

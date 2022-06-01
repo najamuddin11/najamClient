@@ -1,0 +1,104 @@
+.portfolio_popup_inner_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+.portfolio_popup_header {
+  // position: fixed;
+  height: 25px;
+  padding: 30px;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  background-color: #141414;
+  top: 0;
+}
+.portfolio_popup_body {
+  overflow-y: auto !important;
+  padding: 25px 30px;
+  height: 70%;
+  overflow-x: hidden;
+}
+.portfolio_section_control {
+  margin: 20px 0;
+}
+.portfolio_popup_project_logo {
+  height: 32px;
+}
+.portfolio_popup_title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.portfolio_popup_content_title {
+  font-size: 19px;
+  color: rgba(0, 0, 0, 1);
+}
+.portfolio_popup_content {
+  font-size: 15px;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.portfolio_popup_content_list {
+  padding-left: 30px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.portfolio_popup_content_list_item {
+  position: relative;
+  margin: 12px 0;
+  padding-left: 12px;
+}
+.portfolio_popup_content_list_item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -20px;
+  background-image: url("../../../../assets/icons/complete.svg");
+}
+
+.portfolio_popup_skills_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: -5px;
+}
+.portfolio_popup_skills_inner_container {
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  padding: 2px 8px;
+  margin: 5px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.13);
+}
+.portfolio_popup_skills {
+  color: #000;
+  font-size: 15px;
+}
+@media screen and (max-width: 1023px) {
+  .portfolio_popup_body {
+    padding: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio_popup_swiper_container {
+    margin-bottom: 48px;
+  }
+  .portfolio_popup_content_title {
+    font-size: 16px;
+  }
+  .portfolio_popup_content {
+    font-size: 12px;
+  }
+  .portfolio_popup_body {
+    padding: 25px 18px;
+  }
+  .portfolio_popup_skills_container {
+    margin-left: -3px;
+  }
+  .portfolio_popup_skills_inner_container {
+    margin: 3px;
+  }
+  .portfolio_popup_skills {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,119 @@
+.footer {
+  background: #141414;
+  padding-bottom: 200px;
+}
+
+.footer_container {
+  padding-top: 100px;
+}
+
+.footer_inner_container {
+  display: flex;
+  /* margin-top: 40px; */
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer_inner_container > div:nth-child(1) {
+  width: 40%;
+  margin-top: 35px;
+}
+.footer_inner_container > div:nth-child(2) {
+  width: 30%;
+}
+.footer_inner_container > div:nth-child(3) {
+  width: 20%;
+}
+.footer_content_title {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+.footer_content {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.footer_social_icon_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly !important;
+  align-items: center;
+}
+.footer_social_icon_container > a {
+  width: 22px;
+}
+.footer_social_icon_container > a > img {
+  width: 100%;
+}
+.footer_copyright {
+  min-height: 50px;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_copyright_text_content {
+  color: #fff;
+  font-size: 14px;
+}
+@media screen and (max-width: 1023px) {
+  .footer {
+    padding-bottom: 150px;
+  }
+  .footer_container {
+    padding-top: 180px;
+  }
+  .footer_inner_container {
+    justify-content: flex-start;
+  }
+  .footer_inner_container > div:nth-child(1) {
+    width: 48%;
+    margin-top: 20px;
+  }
+  .footer_inner_container > div:nth-child(2) {
+    width: 40%;
+    margin-left: 10%;
+  }
+  .footer_inner_container > div:nth-child(3) {
+    margin-top: 70px;
+    justify-content: center;
+    width: 100%;
+  }
+  .footer_icon_container > img {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-bottom: 100px;
+  }
+  .footer_inner_container {
+    flex-direction: column;
+  }
+  .footer_inner_container > div:nth-child(1) {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .footer_inner_container > div:nth-child(2) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .footer_inner_container > div:nth-child(3) {
+    margin-top: 70px;
+    justify-content: center;
+    width: 100%;
+  }
+  .footer_content {
+    margin-top: 10px;
+  }
+  .footer_copyright_text_content {
+    font-size: 10px;
+  }
+}

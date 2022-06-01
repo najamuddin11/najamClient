@@ -1,0 +1,114 @@
+.portfolio_popup_swiper_container {
+  //   height: 200px;
+  margin-bottom: 70px;
+}
+.portfolio_popup_swiper {
+  overflow: visible !important;
+}
+// .portfolio_popup_swiper_slide {
+// }
+.portfolio_popup_swiper_img_container {
+  // height: 380px;
+  border-radius: 15px;
+  overflow: hidden;
+
+  //   background-position: center;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+}
+.portfolio_popup_swiper_img_container span {
+  width: 100%;
+}
+.portfolio_popup_swiper_img {
+
+  object-fit: cover;
+  min-height: 355px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px !important;
+  width: calc(100% - 2px);
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto !important;
+  bottom: -30px;
+  background-image: url("../../../../assets/icons/arrow.svg") !important;
+  background-repeat: no-repeat !important;
+  //   background-size: cover;
+  width: 72px !important;
+  height: 10px !important;
+  z-index: 1111 !important;
+  opacity: 0.6 !important;
+}
+.swiper-button-prev {
+  left: 5px !important;
+  transform: rotate(180deg);
+}
+.swiper-button-next {
+  right: 5px !important;
+}
+.swiper-button-disabled {
+  opacity: 0.3 !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
+.swiper-pagination {
+  bottom: -30px !important;
+}
+.swiper-pagination-bullet {
+  width: 30px !important;
+  height: 4px !important;
+  border-radius: 10px !important;
+}
+.swiper-pagination-bullet-active {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .portfolio_popup_swiper_img {
+    min-height: 35vw;
+  }
+
+}
+@media screen and (max-width: 767px) {
+
+  // .portfolio_popup_swiper_img {
+  //   min-height: 35vw;
+  // }
+ 
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-image: url("../../../../assets/icons/chevron-right.svg") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #bdbdbd;
+
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 100%;
+    top: 60% !important;
+    bottom: auto !important;
+    opacity: 1 !important;
+  }
+  .swiper-button-prev {
+    left: -10px !important;
+  }
+  .swiper-button-next {
+    right: -10px !important;
+  }
+  .swiper-button-disabled {
+    opacity: 0.5 !important;
+  }
+  .swiper-pagination {
+    bottom: -20px !important;
+  }
+  .swiper-pagination-bullet {
+    width: 15px !important;
+    height: 2px !important  ;
+  }
+}

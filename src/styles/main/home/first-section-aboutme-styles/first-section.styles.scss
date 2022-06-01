@@ -1,0 +1,24 @@
+.section_one {
+  margin-top: 100px !important;
+}
+.section_one_content {
+  text-align: justify;
+}
+.section_one_card_container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 80px auto;
+}
+@media screen and (max-width: 1023px) {
+  .section_one_card_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section_one_card_container {
+    flex-direction: column;
+  }
+}

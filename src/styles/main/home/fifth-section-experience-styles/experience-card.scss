@@ -1,0 +1,184 @@
+.section_five_experience_cards_container {
+  display: flex;
+  flex-direction: column;
+}
+.section_five_experience_card {
+  height: 80px;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+  padding: 0 30px;
+  margin: 12px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.section_five_experience_card:hover {
+  transform: scale(1.01);
+}
+.section_five_experience_card_active {
+  transform: scale(1.01);
+}
+.experience_card_title {
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.experience_card_company_logo {
+  margin-right: 15px;
+}
+.experience_card_divider {
+  margin: 0 10px;
+}
+.experience_card_work_duration {
+  font-size: 14px;
+  position: relative;
+  top: 5px;
+  left: 8px;
+}
+.dropdown_icon {
+  cursor: pointer;
+}
+.section_five_experience_card_content {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  position: relative;
+
+  top: -20px;
+  transition: 0.3s;
+}
+.section_five_experience_card_content_open {
+  opacity: 1;
+}
+.section_five_experience_card_content_open > div {
+  display: block;
+
+  padding: 30px 30px;
+}
+.section_five_experience_card_content_close {
+  opacity: 0;
+}
+.section_five_experience_card_content_close > div {
+  display: none;
+}
+.experience_card_company_name_mobile {
+  display: none;
+}
+.dropdown_icon img {
+  width: 80%;
+  max-width: 20px;
+}
+.experience_card_content_control {
+  margin: 20px 0;
+}
+.experience_card_content_title {
+  font-size: 19px;
+  color: black;
+}
+.experience_card_content_description {
+  font-size: 15px;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.experience_card_content_skill_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience_card_content_skill_tag {
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  padding: 2px 8px;
+  margin: 8px 5px;
+  box-shadow: 0px 4px 40px rgb(0 0 0 / 13%);
+  color: #000;
+  font-size: 15px;
+}
+@media screen and (max-width: 1279px) {
+  .experience_card_title {
+    font-size: 22px;
+  }
+  .section_five_experience_card {
+    padding: 0 26px;
+    height: 75px;
+  }
+
+  .experience_card_company_logo {
+    width: 28px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .experience_card_title {
+    align-items: center;
+    font-size: 17px;
+  }
+  .experience_card_company_logo {
+    margin-right: 12px;
+  }
+  .section_five_experience_card {
+    padding: 0 22px;
+    height: 62px;
+    align-items: center;
+  }
+  .experience_card_work_duration {
+    font-size: 10px;
+    // display: none;
+  }
+
+  .dropdown_icon img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .experience_card_title {
+    font-size: 4.5vw;
+  }
+  .dropdown_icon {
+    width: 22px;
+    height: 22px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  }
+  .dropdown_icon img {
+    width: 50%;
+  }
+  .section_five_experience_card {
+    padding: 0 16px;
+    height: 65px;
+  }
+  .experience_card_work_duration {
+    display: none;
+  }
+
+  .experience_card_company_name {
+    display: none;
+  }
+
+  .experience_card_company_name_mobile {
+    display: block;
+    font-size: 2.6vw;
+  }
+  .experience_card_work_duration_mobile {
+    font-size: 2vw;
+  }
+  .experience_card_divider {
+    display: none;
+  }
+  .experience_card_content_title {
+    font-size: 16px;
+  }
+  .experience_card_content_description {
+    font-size: 12px;
+  }
+  .experience_card_content_skill_tag {
+    margin: 5px 3px;
+  }
+}

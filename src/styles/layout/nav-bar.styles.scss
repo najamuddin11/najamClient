@@ -1,0 +1,143 @@
+.navbar_container {
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 999;
+}
+.nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  justify-content: space-between;
+}
+.nav_anchor {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.nav_links::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -5px;
+}
+.nav_links:hover::before {
+  background: #e7e7e7;
+  width: 100%;
+  animation-name: anchor_animation;
+  animation-duration: 0.3s;
+}
+
+@keyframes anchor_animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes anchor_animation2 {
+  from {
+    background: #e7e7e7;
+    width: 100%;
+  }
+  to {
+    background: #e7e7e7;
+    width: 0;
+  }
+}
+
+.nav_icon {
+  width: 18px;
+  height: 18px;
+  margin: 0 8px;
+}
+
+.nav_items_container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 60px;
+  width: 300px;
+}
+.brand {
+  display: flex;
+}
+.follow_links {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+.hamburger_menu {
+  display: none;
+}
+.close_nav {
+  font-size: 45px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.mobile_menu_container {
+  background-color: #292929;
+  height: 300px;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  padding: 70px 30px;
+  width: 65%;
+  animation-name: animate_mobile_open;
+  animation-duration: 0.3s;
+  height: 100vh;
+}
+
+@keyframes animate_mobile_open {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+.splitter {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 20px 0;
+}
+.follow_links_mobile {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.follow_links_mobile > div {
+  margin: 0 5px;
+}
+@media screen and (max-width: 1023px) {
+  .nav_items_container {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    .nav_items_container {
+      display: none;
+    }
+    .follow_links {
+      display: none;
+    }
+    .hamburger_menu {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
